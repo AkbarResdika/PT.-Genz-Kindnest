@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KindNest | Checkout</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+background:#FFF8EE;
+}
+
+.checkout-wrapper{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:35px;
+padding:60px 8%;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+margin-bottom:25px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+margin-bottom:20px;
+color:#ff9f1c;
+}
+
+.input-group{
+margin-bottom:18px;
+}
+
+.input-group label{
+display:block;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+
+width:100%;
+padding:15px;
+border-radius:12px;
+border:1px solid #ddd;
+font-size:15px;
+
+}
+
+textarea{
+resize:none;
+height:90px;
+}
+
+.order-item{
+
+display:flex;
+justify-content:space-between;
+margin:15px 0;
+
+}
+
+.summary-row{
+
+display:flex;
+justify-content:space-between;
+margin:15px 0;
+
+}
+
+.place-order{
+
+width:100%;
+padding:18px;
+background:#ffb703;
+color:white;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:40px;
+cursor:pointer;
+
+}
+
+.place-order:hover{
+
+background:#fb8500;
+
+}
+
+.payment-option{
+
+display:flex;
+gap:15px;
+margin-top:15px;
+flex-wrap:wrap;
+
+}
+
+.payment-option button{
+
+padding:12px 20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:#eee;
+
+}
+
+.payment-option button.active{
+
+background:#ffb703;
+color:white;
+
+}
+
+.success{
+
+display:none;
+
+position:fixed;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.2);
+
+text-align:center;
+
+z-index:9999;
+
+}
+
+.success i{
+
+font-size:70px;
+
+color:#4CAF50;
+
+margin-bottom:20px;
+
+}
+
+.success button{
+
+margin-top:25px;
+
+padding:12px 30px;
+
+background:#ffb703;
+
+border:none;
+
+border-radius:30px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+@media(max-width:900px){
+
+.checkout-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🧸 KindNest</div>
+
+<nav>
+
+<a href="index.html">Beranda</a>
+
+<a href="barang-baru.html">Barang Baru</a>
+
+<a href="barang-bekas.html">Barang Bekas</a>
+
+<a href="seller-dashboard.html">Jual Barang</a>
+
+<a href="profile.html">Profil</a>
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+<a href="cart.html">Keranjang</a>
+
+</nav>
+
+</header>
+
+<div class="checkout-wrapper">
+
+<div>
+
+<div class="card">
+
+<h2>📍 Alamat Pengiriman</h2>
+
+<div class="input-group">
+
+<label>Nama Penerima</label>
+
+<input type="text" placeholder="Masukkan nama">
+
+</div>
+
+<div class="input-group">
+
+<label>No HP</label>
+
+<input type="text">
+
+</div>
+
+<div class="input-group">
+
+<label>Alamat</label>
+
+<textarea></textarea>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🚚 Pilih Kurir</h2>
+
+<select>
+
+<option>JNE Regular</option>
+
+<option>J&T Express</option>
+
+<option>SiCepat</option>
+
+<option>AnterAja</option>
+
+</select>
+
+</div>
+
+<div class="card">
+
+<h2>💳 Metode Pembayaran</h2>
+
+<div class="payment-option">
+
+<button class="active">Transfer</button>
+
+<button>QRIS</button>
+
+<button>GoPay</button>
+
+<button>OVO</button>
+
+<button>COD</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="card">
+
+<h2>Ringkasan Pesanan</h2>
+
+<div class="order-item">
+
+<span>Stroller Baby Elle</span>
+
+<b>Rp650.000</b>
+
+</div>
+
+<div class="order-item">
+
+<span>Mainan Edukasi</span>
+
+<b>Rp250.000</b>
+
+</div>
+
+<hr>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<b>Rp900.000</b>
+
+</div>
+
+<div class="summary-row">
+
+<span>Ongkir</span>
+
+<b>Rp20.000</b>
+
+</div>
+
+<div class="summary-row">
+
+<span>Voucher</span>
+
+<b>-Rp50.000</b>
+
+</div>
+
+<hr>
+
+<div class="summary-row">
+
+<h3>Total</h3>
+
+<h2 style="color:#ff9f1c">Rp870.000</h2>
+
+</div>
+
+<button class="place-order">
+
+Buat Pesanan
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="success" id="success">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Pesanan Berhasil!</h2>
+
+<p>
+
+Terima kasih telah berbelanja di KindNest.
+
+</p>
+
+<button onclick="window.location='index.html'">
+
+Kembali ke Home
+
+</button>
+
+</div>
+
+<script>
+
+document.querySelectorAll(".payment-option button").forEach(btn=>{
+
+btn.onclick=function(){
+
+document.querySelectorAll(".payment-option button").forEach(b=>b.classList.remove("active"));
+
+this.classList.add("active");
+
+}
+
+});
+
+document.querySelector(".place-order").onclick=function(){
+
+document.getElementById("success").style.display="block";
+
+}
+
+</script>
+
+</body>
+
+</html>
