@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindNest | Donasi Barang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">🧸 KindNest</div>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="barang-baru.html">Barang Baru</a>
+        <a href="barang-bekas.html">Barang Bekas</a>
+        <a href="seller-dashboard.html">Jual Barang</a>
+        <a href="profile.html">Profil</a>
+        <a href="donasi.html">Donasi</a>
+        <a href="blogartikel.html">Blog</a>
+    </nav>
+    <div class="header-icon">
+        <div class="search-box">
+            <input type="text" placeholder="Cari produk...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="profile.html" class="login-btn">Profil</a>
+    </div>
+</header>
+<section class="donation-hero">
+    <div class="donation-hero-text">
+        <span class="badge">Donasi Barang Bekas</span>
+        <h1>Donasikan Barang Bayi & Anak yang Masih Layak Pakai</h1>
+        <p>Salurkan barang yang tidak terpakai kepada keluarga lain yang butuh, dan bantu mereka mendapatkan kebutuhan anak dengan lebih mudah.</p>
+        <a href="#formSection" class="btn-primary">Mulai Donasi</a>
+    </div>
+    <div class="donation-hero-image">
+        <img src="assets/images/donasi.png" alt="Donasi" />
+    </div>
+</section>
+<section class="donation-info-section">
+    <div class="donation-info-card">
+        <h3>1. Pilih Barang</h3>
+        <p>Pilih pakaian, stroller, kursi bayi, atau perlengkapan lain yang masih layak pakai.</p>
+    </div>
+    <div class="donation-info-card">
+        <h3>2. Kirim ke Kami</h3>
+        <p>Isi form donasi dengan detail barang dan kondisi produk.</p>
+    </div>
+    <div class="donation-info-card">
+        <h3>3. Bantu Keluarga</h3>
+        <p>Barang Anda akan diteruskan kepada keluarga yang membutuhkan.</p>
+    </div>
+</section>
+<section id="formSection" class="donation-form-section">
+    <div class="donation-card">
+        <h2>Form Donasi</h2>
+        <form id="donationForm">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama Anda" required>
+            <label>Email</label>
+            <input type="email" placeholder="Masukkan email" required>
+            <label>Nomor HP</label>
+            <input type="tel" placeholder="Masukkan nomor HP" required>
+            <label>Nama Barang</label>
+            <input type="text" placeholder="Contoh: Stroller, Baju Bayi, Botol Susu" required>
+            <label>Kondisi Barang</label>
+            <select required>
+                <option value="">Pilih kondisi</option>
+                <option value="like-new">Seperti Baru</option>
+                <option value="good">Baik</option>
+                <option value="fair">Cukup</option>
+            </select>
+            <label>Deskripsi Singkat</label>
+            <textarea placeholder="Tuliskan kondisi, jumlah, dan catatan khusus"></textarea>
+            <button type="submit" class="btn-primary">Kirim Donasi</button>
+        </form>
+        <div class="success-message" id="donationSuccess" style="display:none;">
+            <h2>Terima kasih!</h2>
+            <p>Permintaan donasi Anda telah diterima. Tim kami akan menghubungi Anda untuk langkah selanjutnya.</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <h2>🧸 KindNest</h2>
+    <p>Marketplace kebutuhan bayi dan anak baru maupun bekas.</p>
+    <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+    </div>
+    <p>© 2026 KindNest</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

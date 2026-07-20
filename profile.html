@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KindNest | Profil Saya</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+
+background:#FFF8EE;
+font-family:Poppins,sans-serif;
+
+}
+
+.profile{
+
+max-width:1200px;
+margin:50px auto;
+display:grid;
+grid-template-columns:300px 1fr;
+gap:30px;
+
+}
+
+.sidebar{
+
+background:white;
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.sidebar img{
+
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+
+}
+
+.sidebar h2{
+
+margin-bottom:8px;
+
+}
+
+.sidebar p{
+
+color:#777;
+margin-bottom:25px;
+
+}
+
+.menu{
+
+list-style:none;
+
+}
+
+.menu li{
+
+padding:15px;
+margin-bottom:10px;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.menu li:hover{
+
+background:#ffb703;
+color:white;
+
+}
+
+.content{
+
+display:grid;
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+margin-bottom:20px;
+color:#ff9f1c;
+
+}
+
+.order{
+
+display:flex;
+justify-content:space-between;
+padding:15px 0;
+border-bottom:1px solid #eee;
+
+}
+
+.badge{
+
+padding:6px 14px;
+border-radius:20px;
+background:#4CAF50;
+color:white;
+font-size:13px;
+
+}
+
+.address{
+
+background:#FFF8EE;
+padding:20px;
+border-radius:15px;
+
+}
+
+.voucher{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:linear-gradient(135deg,#FFD54F,#FFB703);
+padding:20px;
+border-radius:15px;
+color:white;
+margin-top:15px;
+
+}
+
+.edit{
+
+margin-top:25px;
+padding:15px 25px;
+background:#ffb703;
+border:none;
+color:white;
+border-radius:30px;
+cursor:pointer;
+
+}
+
+@media(max-width:900px){
+
+.profile{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="profile">
+
+<div class="sidebar">
+
+<img src="assets/images/avatar.jpg">
+
+<h2>KindNest</h2>
+
+<p>KindNest@gmail.com</p>
+
+<ul class="menu">
+
+<li><i class="fa-solid fa-user"></i> Profil</li>
+
+<li><i class="fa-solid fa-box"></i> Pesanan</li>
+
+<li><i class="fa-solid fa-heart"></i> Wishlist</li>
+
+<li><i class="fa-solid fa-location-dot"></i> Alamat</li>
+
+<li><i class="fa-solid fa-ticket"></i> Voucher</li>
+
+<li><i class="fa-solid fa-gear"></i> Pengaturan</li>
+
+</ul>
+
+</div>
+
+<div class="content">
+
+<div class="card">
+
+<h2>Riwayat Pesanan</h2>
+
+<div class="order">
+
+<div>
+
+<strong>Stroller Baby Elle</strong>
+
+<p>12 Juli 2026</p>
+
+</div>
+
+<span class="badge">Selesai</span>
+
+</div>
+
+<div class="order">
+
+<div>
+
+<strong>Mainan Edukasi</strong>
+
+<p>15 Juli 2026</p>
+
+</div>
+
+<span class="badge">Dikirim</span>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Alamat Pengiriman</h2>
+
+<div class="address">
+
+<strong>Rumah</strong>
+
+<p>
+
+BAF Plaza, Jl. Raya Tj. Barat Kel No.121, RT.14 / RW.4, TJ. Barat., Kec, Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta
+
+</p>
+
+</div>
+
+<button class="edit">
+
+Edit Alamat
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Voucher Saya</h2>
+
+<div class="voucher">
+
+<div>
+
+<h3>HEMAT50</h3>
+
+<p>Potongan Rp50.000</p>
+
+</div>
+
+<i class="fa-solid fa-gift fa-2x"></i>
+
+</div>
+
+<div class="voucher">
+
+<div>
+
+<h3>ONGKIR</h3>
+
+<p>Gratis Ongkir</p>
+
+</div>
+
+<i class="fa-solid fa-truck fa-2x"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
