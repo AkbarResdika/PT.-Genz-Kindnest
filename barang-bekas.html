@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KindNest | Used Products</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.page-header{
+    background:linear-gradient(135deg,#FFE7A5,#FFF8EE);
+    text-align:center;
+    padding:70px 8%;
+}
+
+.page-header h1{
+    font-size:45px;
+    color:#ff9f1c;
+}
+
+.page-header p{
+    color:#666;
+    margin-top:15px;
+}
+
+.used-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+padding:60px 8%;
+
+}
+
+.used-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.used-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.used-card img{
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+.info{
+
+padding:20px;
+
+}
+
+.status{
+
+display:inline-block;
+
+background:#4CAF50;
+
+color:white;
+
+padding:6px 15px;
+
+border-radius:20px;
+
+font-size:13px;
+
+margin-bottom:15px;
+
+}
+
+.location{
+
+color:#777;
+
+margin:8px 0;
+
+}
+
+.spec{
+
+margin:12px 0;
+
+font-size:14px;
+
+color:#555;
+
+}
+
+.price{
+
+font-size:24px;
+
+font-weight:bold;
+
+color:#ff9f1c;
+
+margin:15px 0;
+
+}
+
+.action{
+
+display:flex;
+
+gap:10px;
+
+margin-top:20px;
+
+}
+
+.action button{
+
+flex:1;
+
+padding:12px;
+
+border:none;
+
+border-radius:25px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+
+.detail{
+
+background:#ffb703;
+
+color:white;
+
+}
+
+.chat{
+
+background:#eeeeee;
+
+}
+
+.detail:hover{
+
+background:#fb8500;
+
+}
+
+.chat:hover{
+
+background:#dddddd;
+
+}
+
+.filter-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+padding:30px;
+
+background:#fff;
+
+}
+
+.filter-box select{
+
+padding:12px 20px;
+
+border-radius:30px;
+
+border:1px solid #ddd;
+
+}
+
+@media(max-width:992px){
+
+.used-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.used-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🧸 KindNest</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="barang-baru.html">New Products</a>
+
+<a href="barang-bekas.html">Preloved</a>
+
+<a href="seller-dashboard.html">Sell Items</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+</nav>
+
+<div class="header-icon">
+
+<a href="profile.html" class="login-btn">Profile</a>
+
+</div>
+
+</header>
+
+<section class="page-header">
+
+<h1>Quality Preloved Products</h1>
+
+<p>
+Browse carefully selected preloved baby and children's essentials that are still in excellent condition at affordable prices.
+</p>
+
+</section>
+
+
+<section class="used-grid">
+
+<div class="used-card">
+
+<img src="assets/images/Bajubekas1.jpeg" alt="Preloved Baby Clothes">
+
+<div class="info">
+
+<span class="status">Like New</span>
+
+<h3>Preloved Baby Clothes</h3>
+
+<p class="location">
+<i class="fa-solid fa-location-dot"></i>
+Bandung
+</p>
+
+<p class="spec">
+Used for 3 months • 95% Condition
+</p>
+
+<p class="price">
+Rp115.000
+</p>
+<a href="bajubekas.html" class="detail">
+View Details
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="used-card">
+
+<img src="assets/images/sepedaanak1.jpeg" alt=" Preloved Kids Bicycle">
+
+<div class="info">
+
+<span class="status">90%</span>
+
+<h3>Preloved Kids Bicycle</h3>
+
+<p class="location">
+<i class="fa-solid fa-location-dot"></i>
+Jakarta
+</p>
+
+<p class="spec">
+Used for 1 year • Still in Excellent Condition
+</p>
+
+<p class="price">
+Rp350,000
+</p>
+
+<div class="action">
+
+<a href="sepeda.html" class="detail">View Details</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="used-card">
+
+<img src="assets/images/babychair1.jpeg" alt="Preloved Baby Chair">
+
+<div class="info">
+
+<span class="status">98%</span>
+
+<h3>Baby Chair</h3>
+
+<p class="location"><i class="fa-solid fa-location-dot"></i> Surabaya</p>
+
+<p class="spec">
+Rarely Used • Clean • Original
+</p>
+
+<p class="price">Rp280.000</p>
+
+<div class="action">
+
+<a href="baby-chair.html" class="detail">View Details</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🧸 KindNest</h2>
+
+<p>
+Your trusted marketplace for new and preloved baby & children's essentials.
+</p>
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-tiktok"></i>
+
+</div>
+
+<p>© 2026 KindNest. All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

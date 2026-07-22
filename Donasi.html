@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindNest | Donate Items</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🧸 KindNest
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="barang-baru.html">New Products</a>
+
+        <a href="barang-bekas.html">Preloved</a>
+
+        <a href="seller-dashboard.html">Sell Items</a>
+
+        <a href="profile.html">Profile</a>
+
+        <a href="Donasi.html">Donate</a>
+
+        <a href="blogartikel.html">Blog</a>
+
+    </nav>
+
+    <div class="header-icon">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search products...">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+        <a href="profile.html" class="login-btn">
+
+            Profile
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="donation-hero">
+
+    <div class="donation-hero-text">
+
+        <span class="badge">
+
+            Donate Preloved Items
+
+        </span>
+
+        <h1>
+
+            Donate Baby & Children's Essentials That Are Still in Excellent Condition
+
+        </h1>
+
+        <p>
+
+            Give your unused baby and children's items a second life by helping families in need gain access to quality essentials.
+
+        </p>
+
+        <a href="#formSection" class="btn-primary">
+
+            Start Donating
+
+        </a>
+
+    </div>
+
+    <div class="donation-hero-image">
+
+        <img
+            src="assets/images/donasi.png"
+            alt="Donation">
+
+    </div>
+
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="donation-info-section">
+
+    <div class="donation-info-card">
+
+        <h3>
+
+            1. Choose Your Items
+
+        </h3>
+
+        <p>
+
+            Select baby clothes, strollers, baby chairs, toys, or any other items that are still clean, safe, and in good condition.
+
+        </p>
+
+    </div>
+
+    <div class="donation-info-card">
+
+        <h3>
+
+            2. Submit the Form
+
+        </h3>
+
+        <p>
+
+            Fill out the donation form with complete information about the item and its current condition.
+
+        </p>
+
+    </div>
+
+    <div class="donation-info-card">
+
+        <h3>
+
+            3. Help Families
+
+        </h3>
+
+        <p>
+
+            Our team will distribute your donated items to families who truly need them.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= DONATION FORM ================= -->
+
+<section id="formSection" class="donation-form-section">
+
+    <div class="donation-card">
+
+        <h2>
+
+            Donation Form
+
+        </h2>
+
+        <form id="donationForm">
+
+            <label>
+
+                Full Name
+
+            </label>
+
+            <input
+                type="text"
+                placeholder="Enter your full name"
+                required>
+
+            <label>
+
+                Email Address
+
+            </label>
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required>
+
+            <label>
+
+                Phone Number
+
+            </label>
+
+            <input
+                type="tel"
+                placeholder="Enter your phone number"
+                required>
+
+            <label>
+
+                Item Name
+
+            </label>
+
+            <input
+                type="text"
+                placeholder="Example: Stroller, Baby Clothes, Baby Bottle"
+                required>
+
+            <label>
+
+                Item Condition
+
+            </label>
+
+            <select required>
+
+                <option value="">
+
+                    Select Condition
+
+                </option>
+
+                <option value="like-new">
+
+                    Like New
+
+                </option>
+
+                <option value="good">
+
+                    Good
+
+                </option>
+
+                <option value="fair">
+
+                    Fair
+
+                </option>
+
+            </select>
+
+            <label>
+
+                Description
+
+            </label>
+
+            <textarea
+                placeholder="Describe the item condition, quantity, and any additional notes"></textarea>
+            <button type="submit" class="btn-primary">
+
+                Submit Donation
+
+            </button>
+
+        </form>
+
+        <div
+            class="success-message"
+            id="donationSuccess"
+            style="display:none;">
+
+            <h2>
+
+                Thank You!
+
+            </h2>
+
+            <p>
+
+                Your donation request has been successfully submitted.
+                Our team will contact you soon with the next steps.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>
+
+        🧸 KindNest
+
+    </h2>
+
+    <p>
+
+        Marketplace for new and preloved baby & children's essentials.
+
+    </p>
+
+    <div class="social">
+
+        <i class="fab fa-facebook"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-tiktok"></i>
+
+    </div>
+
+    <p>
+
+        © 2026 KindNest
+
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+<script>
+
+const donationForm = document.getElementById("donationForm");
+const successMessage = document.getElementById("donationSuccess");
+
+donationForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    donationForm.style.display = "none";
+
+    successMessage.style.display = "block";
+
+    successMessage.scrollIntoView({
+
+        behavior: "smooth"
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
+                
